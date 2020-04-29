@@ -1,0 +1,207 @@
+Git Hub
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+GitHubAdminstration:  To share sourcecode among themselves of developers?
+
+How to share sourcecode to another developer?
+>>Sharing of sourcecode through mails is violation.
+>>For that they are using centralized remote repos like
+Github, 
+Bitbucket
+Gitlas
+TFS: Team foundation server,
+SVN:Subversion
+
+Here is using Github as remoter repo.
+Here developers are connect  to remote repo.
+Then developers push the source code to remote repo.
+
+******As a develops engineer create REMOTE REPOSITORY*****
+
+Then that URL share to developers teams. By using this they push the source code to remote repo.
+For multiple of developers we can create Team
+>> Create Repo-URL
+>>Create a team – add all resources-30
+>>Provide access team to repo
+Rather giving individual access to individually we creating team
+Github.com  is public.
+This not used by companies
+Every company has their own enterprise repos>>Within the company
+For example
+American Airline: https://ghe.aa.com>>This can able to access to American airlines employes
+
+1. Create a org for each Business unit-Cloud solutions
+2. Create Repo-URL
+3. Create a team – add all resources-30
+4. Provide access team to repo
+
+Step one is only one time process
+But step 2 3 4 may repeat for each project
+
+Assume we are joined in Organisation as Devops engineer
+Assume that name is PAYTM project
+
+Before step1 we have to check it whether any organisation exist or not with that name?
+
+We have check with TL
+
+If exit check that details and work along with-it.
+
+Register in Github
+Mail ID:veenay333@gmail.com
+PW: 
+
+Step1: Createa organisation
+How we are creating organisation?
+>>Top  right corner  select “+” symbol and select new organisation.
+ 
+•	Organiation Name
+•	Billing email
+Generally it has 3 plans 
+1.	Open source   -Free>>We can  create many public repos
+2.	Team	-payed –unlimited public and private repos
+3.	Enterprise	-Hosted, SAML Sign in, SLA Enterprise, Adavance auditing
+ 
+
+In pubic repo it sees any body(We can see the code but not able to update)
+In private repo it can see only who can have access (You choose who can see and commit to this repo)
+•	Select Create organisation
+
+URL: https://github.com/v-hs-1   (This is organisation link)>> Org name
+
+Now I want create repos under this organisation
+•	Select New repo
+https://github.com/v-hs-1/V-1.git (This is repo link)>> Repo Name
+
+Step3: Create a Team:
+ 
+•	Open Repo link
+•	Select  team
+•	Update team name
+•	Select Create Team
+Now to add members who are going to work on this project
+Add members by using user name or Email IDS
+After a team member that person gets email and then he accepts the invitation.
+
+In reality we are not get accept  email
+Directly going to add by TL of Devops team in entrepreneur projects
+ 
+After a member name shows that “Maintainer” It means he is the admin
+We can able to change the admins>>Only admin can able to see the setting Option
+AS a developer they update code and push to repo
+
+Devops 3rd Class
+We can create multiple repos in one organisation
+We can create multiple teams  in each projects
+> Create a org for each Business unit-Cloud solutions
+>> Create Repo-URL
+We can create Multiple repos like
+PaytmUi
+Paytm backend
+>>Create a team – add all resources-30
+We can create multiple teams
+PayrmDevteams
+PaytmDevopsteas
+>>Provide access team to repo
+GIT Commands
+As a developer prospective how the developer develop the source code?
+How he going to commit the source code in local repo?
+and how he is going to push the source code to local to remote repo?
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Git Organiation:  https://github.com/veenay333
+
+Git Repo link: https://github.com/veenay333/Git-veenay.git
+
+Git Organiation: https://github.com/Git-Practise-2019
+
+Git Repo Link: https://github.com/Git-Practise-2019/Git
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+"Git first file"
+
+Git config:
+User name and email configaration related command as follows
+
+     git config --global user.name "vinay"
+     git config --global user.email "veenay333@gmail.com"
+
+To create a file:              Vi, touch, vim
+
+TO create a folder:          mkdir
+
+To intitate git:                  git init
+
+
+cd
+mkdir
+git init
+git status
+git add
+git add -A : to add all files
+git commit -a -m "message"  : If we use -a aling with commit command no need to excute git add command
+git remote add origin Remote Repo URL
+                         Origin: Is short name for url
+						 EX; GGG  =  https://github.com/Git-Practise-2019/Git.git
+git remote -v  :  Shows push and fetch links
+				EX: $ git remote -v
+				GGG     https://github.com/Git-Practise-2019/Git.git (fetch)
+				GGG     https://github.com/Git-Practise-2019/Git.git (push)
+
+git remote remove  origin : Removs the link
+
+git push origin master:  It pushes code from local repo to Remote repo  (Github repo)
+      push : Git command
+	  Origin: remote repo name 
+	  master: Branch name 
+	  
+git log  : Shows commit ids
+git log -2 : Dispaly only 2 commit ids
+git show --pretty= "" -name-only <<commit ID>>  : It displays all the files which are commited in that particular commit
+git clean -n: It preview the changes
+git clean -f : if we want to remove new files from working area
+git reset : move back file from staging area to working area
+git revert: It will revert the changes commited in that paticular commit id from local repo
+git push origin master -f: It will revert the changes from remote repo.
+
+VCS:
+Version Control System (VCS), also known as Source Control Management (SCM), is a way to manage and document changes developers make to software code. The SCM methodology stores IT resources, gives access to all versions of the software as long as these states are saved and offers a comparison between all different versions, making development more efficient and more agile.
+ 
+ For efficiency VCS	
+							Commit often
+							Add a commit message
+							Do not push uncomplete work
+							Decide on common branch practices
+							Push source code to your repository
+							
+VCM like
+Github, 
+Bitbucket
+Gitlas
+TFS: Team foundation server,
+SVN:Subversion
+
+git branch: Displays  branches list
+git branch -a : Displays all branchs along with remote repo
+git branch AAA: to create new branch
+                       git command
+					   branch command
+					   AAA branch name
+git checkout (branch name): It changes the head according to branch name 
+git branch -r : It displays branch along with remote repo URL (alias name)
+As a devloper dont work on master, need to created new branch and need to work on it
+git branch -v : Shows all branches along with current branch 
+git diff master AAA: shows the differences in branches
+								AAA is new branch
+git merger AAA: Merge happens with Master
+git branch -d branch name : to delete the branch
+git push origin -delete bugfix ; Delete the remote branch in the repo
+												origin is alias name of repo link
+												bugfix is branch name
+git push origin --all: Push all origins along with branches
+git tag tagname; To create tags
+git push alias name --tags: To push tags to repo
+git tag -d tag name : to delete the tag
+git tag --delete tag name : to delete the tag
+git push origin -d tag name: To delete tag in remote repo
+git log --oneline
+never update code in remote repo
